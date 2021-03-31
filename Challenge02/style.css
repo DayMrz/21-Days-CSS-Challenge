@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.top-cont{
+    background-color: rgb(12, 52, 65);
+    margin: 0 auto;
+    padding: 10px;
+    width: 100%;
+
+}
+.top-info{
+    width: 50%;
+    margin: 0 auto;
+}
+section{
+    width: 50%;
+    color: honeydew;
+}
+.content{
+    width: 50%;
+    margin: 0 auto;
+}
+
+

@@ -1,0 +1,154 @@
+:root {
+    --hero-background: #F3EED9;
+    --cont1-background: #222C2A;
+    --cont2-background: #824936;
+}
+
+*, *::before, ::after {
+    box-sizing: border-box;
+    }
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+}
+
+.container {
+    padding: 3rem 2rem ;
+    max-width: 1128px;
+    align-items: top;
+    width: 78%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero {
+    background-color: var(--hero-background);
+    text-align: center;
+    min-height: 500px;
+
+    display: flex;
+    align-items: center;
+    }
+
+.hero h1{
+    color: var(--cont2-background);
+    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+}
+
+main h2 {
+    text-align: center;
+    color: var(--cont2-background);
+    margin-bottom: .8em;
+}
+
+.cont1 {
+background-color: var(--cont1-background);
+}
+
+.cont2 {
+    background-color: var(--cont2-background);
+}
+
+.cont1,
+.cont2 {
+    padding: 2rem;
+    color: white;
+    font-size: 1rem;
+}
+
+.paragraph1__main,
+.paragraph2__main,
+.cont1__text,
+.cont2__text {
+    width: 48%;
+    justify-content: space-between;
+}
+
+.cont1__img,
+.cont2__img {
+    object-fit: contain;
+    width: 48%;
+}
+
+h5 {
+    text-transform: uppercase;
+    letter-spacing: .3em;
+    font-weight:lighter ;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h2 {
+
+   color: var(--hero-background); 
+   margin-top: 0;
+   font-family: 'Playfair Display', serif;
+   font-weight: 900;
+}
+
+@media (max-width: 750px){
+    .row {
+        display: block;
+    }
+    .container {
+        display: table;
+        width: 90%;  
+    }
+
+    .hero {
+        padding: 4rem 2rem;
+    }
+    
+    h5 {
+        margin-bottom: .5em;
+    }
+
+    .hero h1{
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .paragraph1__main,
+    .paragraph2__main,
+    .cont1__text,
+    .cont2__text {
+        width: 100%;
+        justify-content: space-between;
+        text-align: justify;
+    }
+
+    .text__main {
+        padding: 1.5em;
+    }
+
+    .cont1__img,
+    .cont2__img {
+        object-fit: contain;
+        width: 100%;
+        margin-top: 1em;
+    }
+
+    .cont2 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .cont2__img {
+        display: table-row-group;
+    }
+
+    .cont2__text {
+        display: table-header-group;
+    }
+
+}

@@ -1,0 +1,65 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    font-size: 1.3rem;
+}
+.head{
+    background-color: #23424A;
+    width: 100%;
+}
+.container{
+    width: 85%;
+    max-width: 1100px;
+    margin: 0 auto ;
+    padding: 2em;
+}
+.head__text{
+    width: 60%;
+    color: white;
+}
+p{
+    font-size: 0.9rem;
+}
+.head__btn{
+    background-color: #38CFD9;
+    color: #072A2D;
+    margin: 30px 0;
+    padding: .75em 2em;
+
+    border: none;
+    border-radius: 100px;
+    
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+.row{
+    display: flex;
+    /* by default, display flex organize teh content in rows  */
+        /* gap: 2em; */
+    /* gap is only supports in firefox... don't used it :( */
+}
+.col{
+    /* by default : flex items */
+    width: 100%;
+    text-align: center;
+}
+.col + .col {
+    /* check the plus, PLEASE!!  this will take only the two columns on the left*/
+    margin-left: 40px ;
+}
+.column3__h2{
+    color:#87629A;
+}
+.column3 p{
+    color: black;
+}
+.column2{
+    color: white;
+    background-color: #26566d;
+    width: 100%;
+}
+
