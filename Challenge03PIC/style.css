@@ -1,8 +1,9 @@
 :root {
-    --nav-background: rgb(5, 23, 46, .95) ;
+    --nav-background: rgb(5, 23, 46, .95);
     --header-background: rgb(30, 57, 92);
     --sidebar-background: rgb(53, 96, 151);
 }
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css";
 
 *, *::before, ::after {
     box-sizing: border-box;
@@ -29,8 +30,7 @@ img {
 }
 
 .nav {
-    width: 100%;
-    
+    width: 100%;    
     visibility: hidden;
     height: auto;
     position: absolute;
@@ -45,7 +45,6 @@ img {
 .fas {
     font-size: 1.5em;
     color: white;
-
     cursor: pointer;
 }
 
